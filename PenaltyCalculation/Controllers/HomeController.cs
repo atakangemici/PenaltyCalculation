@@ -36,7 +36,6 @@ namespace PenaltyCalculation.Controllers
 
                 for (int i = 0; i < sumDay; i++)
                 {
-
                     if (startDate.DayOfWeek == DayOfWeek.Sunday || startDate.DayOfWeek == DayOfWeek.Saturday)
                     {
                         startDate = startDate.AddDays(1);
