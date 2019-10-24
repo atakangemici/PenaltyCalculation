@@ -54,7 +54,6 @@ namespace PenaltyCalculation.Controllers
                     int priceDay = dayCount - 10;
                     ViewBag.PenaltyPrice = priceDay * 5;
                 }
-
             }
             ViewBag.countryValues = new SelectList(DBContext.Country, "Value", "Name");
 
