@@ -14,14 +14,13 @@ namespace PenaltyCalculation.Entities
 
     {
         public PenaltyDbContext() : base("name=myConnectionString")
-        
+
         {
         }
 
         public DbSet<Country> Country { get; set; }
         public DbSet<CountrySettings> CountrySettings { get; set; }
         public DbSet<Holidays> Holidays { get; set; }
-
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {

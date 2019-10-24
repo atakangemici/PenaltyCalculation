@@ -12,11 +12,11 @@ namespace PenaltyCalculation.Controllers
     public class HomeController : Controller
     {
         PenaltyDbContext DBContext = new PenaltyDbContext();
+
         public ActionResult Index()
         {
 
             ViewBag.countryValues = new SelectList(DBContext.Country, "Value", "Name");
-            ViewBag.atakan = "aa";
 
             return View();
         }
@@ -48,14 +48,12 @@ namespace PenaltyCalculation.Controllers
                         dayCount++;
                     }
                     startDate = startDate.AddDays(1);
-
                 }
 
                 if (dayCount > 10)
                 {
                     int priceDay = dayCount - 10;
                     ViewBag.PenaltyPrice = priceDay * 5;
-
                 }
 
             }
