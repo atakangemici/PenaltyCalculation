@@ -30,7 +30,7 @@ namespace PenaltyCalculation.Controllers
             double sumDay = totalDay.TotalDays;
             var Language = ConfigurationManager.AppSettings["Language"];
 
-            if (form.countryValues == Language)
+            if (form.CountryValues == Language)
             {
                 var trCountry = DBContext.Country.Where(x => x.Value == Language).ToList();
 

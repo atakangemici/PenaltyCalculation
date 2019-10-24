@@ -10,7 +10,7 @@ namespace PenaltyCalculation.Models
     {
         public DateTime DateChecked { get; set; }      
         public DateTime DateReturned { get; set; }     
-        public string countryValues { get; set; }
+        public string CountryValues { get; set; }
      
 
 
