@@ -15,7 +15,6 @@ namespace PenaltyCalculation.Controllers
 
         public ActionResult Index()
         {
-
             ViewBag.countryValues = new SelectList(DBContext.Country, "Value", "Name");
 
             return View();
@@ -57,7 +56,6 @@ namespace PenaltyCalculation.Controllers
                 }
 
             }
-
             ViewBag.countryValues = new SelectList(DBContext.Country, "Value", "Name");
 
             return View();
